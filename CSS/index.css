@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#cuerpo
+{
+    background-color: #e4e4e4; /*AQUI HICE CAMBIOS*/
+    font-family: sans-serif;
+    font-size: 13pt;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header
+{
+    overflow: hidden;   /*AQUI HICE CAMBIOS*/
+    width: 100%;
+    background-color: #0f0083;
+    color: white;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+img
+{
+    margin: 0 auto;
+    width:100%;
+}
+h2
+{
+    padding: 1%;/*AQUI VAN CAMBIOS*/
+    background-color: black;
+    border-radius: 25px;
+    text-align: center;
+    color:gold;
+}
+h5
+{
+    color: red;
+    font-weight: bold;
+}
+table, table td, table th
+{
+    margin:0 auto;
+    border: 1px solid black;
+    color: white;
+}
+table th
+{
+    padding: 0.5%;
+    background-color: rgb(43, 161, 161);
+}
+table td
+{
+    padding: 0.5%;
+    background-color: rgb(235, 235, 235);
+    color:black;
+}
+#to-main
+{
+    border: 3px dotted black;
+    vertical-align: middle;
+}
+.inf
+{
+    padding-top: 20px;
+}
+.texto-carousel
+{
+    font-weight: bold;
+    color:white;
+    background-color: #f56f3a;
+    border-radius: 10px;
+}
+#head-left img
+{
+    width:28%;
+}
+.list
+{
+    display: inline-block;
+}
+.list, .secondlist
+{
+    list-style: none;
+}
+.list > li
+{
+    float: left;    /*AQUI HICE CAMBIOS*/
+}
+.list li a:active
+{
+    background-color: brown;
+}
+.list li a
+{
+    display:block;
+    padding:8px 15px 8px 15px;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+    line-height: normal;
+    -webkit-transition: all 500ms ease;    /*AQUI HICE CAMBIOS*/
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.list li a:hover
+{
+    text-decoration: none;
+    background-color: #f56f3a;  /*AQUI HICE CAMBIOS*/
+    border-radius: 50px;
+}
+.list li ul
+{
+    display: none;
+    position: absolute;
+    float: left;
+    padding: 0px;
+    min-width: 140px; 
+}
+.list li:hover > ul
+{
+    display: block;
+    text-align: left;
+    background-color: #0f0083;  /*AQUI HICE CAMBIOS*/
+    border-radius: 25px;
+    z-index: 1000;
+    line-height: normal;
+}
+.icono
+{
+    padding:3px;
+}
+header nav ul li .secondlist li             /*NUEVO CAMBIO*/
+{ 
+    overflow: hidden;
+}
+.container
+{
+    margin-top: 1%;
+    overflow: hidden;
+}
+.row
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.principal
+{
+    margin-top: 2%;
+}
+.text-center img
+{
+    width: 50%;
+}
+.carousel-inner img 
+{
+    width: 60%;
+    height: 400px;
+    border-radius: 5%;
+}
+.carousel-inner
+{
+    height: 400px;
+}
+.video
+{
+    margin:0 auto;
+    width: 100%;
+}
+.footer1
+{
+    float: left;
+    padding:0.5%;
+    margin-left: 2.5%;
+    width:61.5%;
+}
+.footer1 img
+{
+    width:5.5%;
+    height: 2.5em;
+    padding: 0.5%;
+}
+.footer2
+{
+    float: right;
+    padding:0.5%;
+    margin-right: 2.5%;
+    width:31.5%;
+    text-align: right;
+}
+.footer2 img
+{
+    width:60%;
+    margin: 0 auto;
+}
+footer
+{
+    overflow: hidden;
+    margin-top: auto;
+    justify-content: space-between; /*AQUI HICE CAMBIOS*/
+    background-color: #0f0083;
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width:480px)
+{
+#cuerpo
+{
+    font-size: 13pt;
+}
+#Column, #to-main
+{
+    margin-top: 5%;
+}
+#head-left img
+{
+    width:60%;
+}
+h5
+{
+    display: none;
+}
+span
+{
+    display: none;
+}
+#to-main
+{
+    align-content: center;
+    text-align: center;
+    border: none;
+}
+.inf
+{
+    width: 15%;
+    padding:1%;
+}
+.list
+{
+    display: inline-block;
+}
+.list li a
+{
+    padding:5px 15px 5px 15px;
+    justify-content: space-around;
+}
+header
+{
+    display: block;   /*AQUI HICE CAMBIOS*/
+    width: 100%;
+    background-color: #0f0083;
+    color: white;
+    border-bottom: 3px solid black;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.list li a:active
+{
+    text-decoration: none;
+    background-color: #f56f3a;  /*AQUI HICE CAMBIOS*/
+    border-radius: 50px;
+}
+footer
+{
+    overflow: hidden;
+    margin-bottom: 0;
+    justify-content: space-between; /*AQUI HICE CAMBIOS*/
+    background-color: #0f0083;
+    color: white;
+    font-weight: bold;
+}
+.footer1
+{
+    width: 100%;
+    float: none;
+    padding:0.5%;
+    text-align: justify;
+}
+.footer1 img
+{
+    width:7%;
+    height: 2em;
+    padding: 0.5%;
+    margin: auto;
+}
+.footer2
+{
+    display: none;
+    width: 100%;
+    float: none;
+    padding:0.5%;
+    text-align: center;
+}
+.footer2 img
+{
+    margin: auto;
+    width:50%;
+}
+}
+@media screen and (min-width:481px) and (max-width:768px)
+{
+#cuerpo
+{
+    font-size: 13pt;
+}
+#Column, #to-main
+{
+    margin-top: 5%;
+}
+#head-left img
+{
+    width:50%;
+}
+h5
+{
+    display: none;
+}
+span
+{
+    display: none;
+}
+#to-main
+{
+    align-content: center;
+    text-align: center;
+    border: none;
+}
+.inf
+{
+    width: 15%;
+    padding:1%;
+}
+.list
+{
+    display: inline-block;
+}
+.list li a
+{
+    padding:5px 25px 5px 25px;
+    justify-content: space-around;
+}
+header
+{
+    display: block;   /*AQUI HICE CAMBIOS*/
+    width: 100%;
+    background-color: #0f0083;
+    color: white;
+    border-bottom: 3px solid black;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.list li a:active
+{
+    text-decoration: none;
+    background-color: #f56f3a;  /*AQUI HICE CAMBIOS*/
+    border-radius: 50px;
+}
+footer
+{
+    overflow: hidden;
+    margin-bottom: 0;
+    justify-content: space-between; /*AQUI HICE CAMBIOS*/
+    background-color: #0f0083;
+    color: white;
+    font-weight: bold;
+}
+.footer1
+{
+    width: 100%;
+    float: none;
+    padding:0.5%;
+    text-align: justify;
+}
+.footer1 img
+{
+    width:6.5%;
+    height: 2.5em;
+    padding: 0.5%;
+    margin: auto;
+}
+.footer2
+{
+    display: none;
+    width: 100%;
+    float: none;
+    padding:0.5%;
+    text-align: center;
+}
+.footer2 img
+{
+    margin: auto;
+    width: 50%;
+}
+}
